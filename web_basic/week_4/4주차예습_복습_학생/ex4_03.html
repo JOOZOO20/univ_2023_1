@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>링크의 target 속성 활용</title>
+</head>
+<body>
+<h3>링크의 target 속성 활용</h3>
+<hr>
+<table border="2">
+	<caption>사이트</caption>
+	<tr>
+		<td>네이버</td>
+		<td>성공회대</td>	
+    </tr>
+	<tr>
+		<td>
+			<a href="https://naver.com" target="_blank"><img src="img/naver.png" width="150px" alt="네이버"></a>
+			<!--#은 임시로 달아놓은거임. '나 링크쓸거야.' 를 알리는 멘트-->
+			<!--target이라는 속성은 _blank를 쓰면 새로운 창에 뜨게끔함.-->
+    		
+		</td>
+		<td>
+			<a href="https://skhu.ac.kr" target="_self"><img src="./img/skhu.png" width="150px" alt="성공회대"></a>	
+		</td>	
+    </tr>
+</table>
+	
+<h3>행 3열</h3>
+<table border="1">
+	<tr>
+		<td>1</td>	<td colspan="2">2개 열 병합</td>
+	</tr>
+	<tr>
+		<td colspan="2"></td>	<td>6</td>
+	</tr>
+	<tr>
+		<td colspan="3">3열 병합</td>
+	</tr>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>링크와 앵커</title>
+<style>
+	table,th,td{
+		border-collapse: collapse;
+	}
+	table{
+		border-top: solid 3px salmon;
+		border-bottom: solid 3px salmon;
+		border-left: solid 3px saddlebrown;
+		border-right: solid 3px saddlebrown;
+	}
+	td{
+		text-align: center;
+		background-color: rgb(249, 210, 216);
+		width: 200px;
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+<h3>Elvis Presley</h3>
+<hr>
+<ul>
+	<li><a href="#love">Love me tender</a> <!--#id value 하면 그 값으로 이동함.-->
+	<li><a href="#a">Can't help falling in love</a>
+	<li><a href="#b">It's now or never</a>
+</ul>
+<h3 id="love">Love me tender</h3>
+Love me tender, Love me sweet, Never let me go.<br>
+You have made my life complete, <br>
+And I love you so.<br>
+Love me tender, Love me true, <br>
+All my dreams fulfilled.<br>
+For my darling I love you, And I always will.<br>
+Love me tender, Love me sweet, Never let me go.<br>
+You have made my life complete, <br>
+And I love you so.<br>
+Love me tender, Love me true, <br>
+All my dreams fulfilled.<br>
+For my darling I love you, And I always will.<br>
+Love me tender, Love me sweet, Never let me go.<br>
+You have made my life complete, <br>
+And I love you so.<br>
+Love me tender, Love me true, <br>
+All my dreams fulfilled.<br>
+For my darling I love you, And I always will.<br>
+Love me tender, Love me sweet, Never let me go.<br>
+You have made my life complete, <br>
+And I love you so.<br>
+Love me tender, Love me true, <br>
+All my dreams fulfilled.<br>
+For my darling I love you, And I always will.<br>
+<h3 id="a">Can't help falling in love</h3>
+Love me tender, Love me sweet, Never let me go.<br>
+You have made my life complete, And I love you so.<br>
+Love me tender, Love me true, All my dreams fulfilled.<br>
+For my darling I love you, And I always will.<br>
+Love me tender, Love me sweet, Never let me go.<br>
+You have made my life complete, And I love you so.<br>
+Love me tender, Love me true, All my dreams fulfilled.<br>
+For my darling I love you, And I always will.<br>Love me tender, Love me sweet, Never let me go.<br>
+You have made my life complete, And I love you so.<br>
+Love me tender, Love me true, All my dreams fulfilled.<br>
+For my darling I love you, And I always will.<br>Love me tender, Love me sweet, Never let me go.<br>
+You have made my life complete, And I love you so.<br>
+Love me tender, Love me true, All my dreams fulfilled.<br>
+For my darling I love you, And I always will.<br>Love me tender, Love me sweet, Never let me go.<br>
+You have made my life complete, And I love you so.<br>
+Love me tender, Love me true, All my dreams fulfilled.<br>
+For my darling I love you, And I always will.<br>Love me tender, Love me sweet, Never let me go.<br>
+You have made my life complete, And I love you so.<br>
+Love me tender, Love me true, All my dreams fulfilled.<br>
+For my darling I love you, And I always will.<br>
+<h3 id="b">It''s now or never</h3>
+It's now or never, Come hold me tight<br>
+Kiss me my darling, Be mine tonight<br>
+Tomorrow will be too late,<br>
+It's now or never. My love won't wait.<br>
+It's now or never, Come hold me tight<br>
+Kiss me my darling, Be mine tonight<br>
+Tomorrow will be too late,<br>
+It's now or never. My love won't wait.<br>It's now or never, Come hold me tight<br>
+Kiss me my darling, Be mine tonight<br>
+Tomorrow will be too late,<br>
+It's now or never. My love won't wait.<br>It's now or never, Come hold me tight<br>
+Kiss me my darling, Be mine tonight<br>
+Tomorrow will be too late,<br>
+It's now or never. My love won't wait.<br>It's now or never, Come hold me tight<br>
+Kiss me my darling, Be mine tonight<br>
+Tomorrow will be too late,<br>
+It's now or never. My love won't wait.<br>It's now or never, Come hold me tight<br>
+Kiss me my darling, Be mine tonight<br>
+Tomorrow will be too late,<br>
+It's now or never. My love won't wait.<br>It's now or never, Come hold me tight<br>
+Kiss me my darling, Be mine tonight<br>
+Tomorrow will be too late,<br>
+It's now or never. My love won't wait.<br>
+
+
+<hr>
+3행 4열 테이블
+
+<table border="1">
+	<tr>
+		<td>1</td>	<td colspan="2">2	3</td>	<td rowspan="2">4</td>
+		<!--행은 같은 위치에 있어야만 합칠 수 있음.-->
+	</tr>
+	<tr>
+		<td colspan="3">1 2 3</td>
+	</tr>
+	<tr>
+		<td>1</td>	<td>2</td>	<td>3</td>	<td>4</td>
+	</tr>
+</table>
+
+<hr>5행 4열 테이블
+<table border="1">
+	<caption>오늘의 날씨</caption>
+	<tr>
+		<td>도</td> <td>시</td> <td colspan="2">최저/최대 기온</td>
+	</tr>
+	<tr>
+		<td rowspan="2">경기도</td> <td>수원</td> <td>20</td> <td>30</td>
+	</tr>
+	<tr>
+		 <td>인천</td> <td>20</td> <td>30</td>
+	</tr>
+	<tr>
+		<td rowspan="2">강원도</td> <td>강릉</td> <td>20</td> <td>30</td>
+	</tr>
+	<tr>
+		 <td>원주</td> <td>20</td> <td>30</td>
+	</tr>
+</table>
+
+ </body>
+</html>
