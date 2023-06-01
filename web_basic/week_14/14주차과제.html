@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/product.css">
+  <title>14주차과제</title>
+</head>
+
+<body>
+  <div id="container">
+    <h1 id="heading">수강과목</h1>
+    <div id="prod-pic">
+      <img src="images/web.PNG" alt="수강과목" id="book" width="200" height="200">
+
+      <div id="small-pic">
+        <img src="images/web.PNG" class="small" >
+        <img src="images/data.PNG" id="small2" class="small" onclick="displaySrc()">
+        <img src="images/python.PNG" class="small">
+      </div>
+    </div>
+    <div id="desc">
+      <ul>
+        <li>과목명 : 웹개발입문</li>
+        <li class="redtext">판매가 : 27,000</li>
+        <li>배송비 : 2500</li>
+        <li>(50,000원 이상 구매시 무료)</li>
+        <li>적립금 : 1,500원</li>
+        <li>초판 날짜 : 2021년 01월 22일</li>
+        <button>장바구니 담기</button>
+      </ul>
+      <a href="https://www.yes24.com/Product/Goods/96674934" id="view" target="_blank">상세 설명 보기</a>
+    </div>
+
+    <div id="detail">
+      <hr>
+      <h2 id="detailh2">상품 상세 정보</h2>
+      <ul>
+        <li>발행일 : 2021년 01월 22일</li>
+        <li>출판사: 이지스퍼블리싱</li>
+        <li>ISBN13 : 9791163032212</li>
+        <li>쪽수, 무게, 크기 : 648쪽 | 1,309g | 188*257mm</li>
+      </ul>
+      <h3 id="info">Information</h3>
+      <p>웹 분야 1위! 그만한 이유가 있다! <br>
+      키보드를 잡고 실습하다 보면 <br>
+      웹 개발의 3대 기술이 끝난다!</p>
+      <h3 id="review">출판사 리뷰</h3>
+      <p>웹 개발 분야는 하루가 다르게 변하지만 웹 표준 기술인 HTML, CSS, 자바스크립트의 기본은 변하지 않는다. 이 책을 보고 나면 어떤 최신 웹 기술을 배우더라도 두렵지 않다. 웹 개발을 하든, 웹 디자인을 하든
+      이 책에서 소개하는 기술들이 기본이 되기 때문이다.
+      이 책은 웹에 입문한 독자를 위해 HTML의 태그가 무엇인지부터 시작해 CSS, 자바스크립트의 고급 기술까지 다양한 개념을 간단명료한 예제와 함께 충분히 설명한다. 총 500여 개가 넘는 [Do it! 예제와
+      실습]을 하고 [한눈에 정리하기], [마무리 문제]까지 풀고 나면 어느새 웹 기본기가 단단하게 쌓여 있을 것이다.</p>
+    </div>
+  </div>
+
+
+
+  <script>
+
+    var book = document.querySelector("#book");
+    var smallPics = document.querySelectorAll(".small");
+    for (let i = 0; i < smallPics.length; i++) {
+        smallPics[i].addEventListener("click", changePic);
+      }
+
+      
+    document.getElementById("detailh2").style.color = "green";
+    document.getElementById("detailh2").style.fontWeight = "bold";
+    document.getElementById("detailh2").style.color = "green";
+    document.getElementById("detailh2").style.fontWeight = "bold";
+    document.getElementById("info").style.color = "green";
+    document.getElementById("review").style.color = "green";
+    document.getElementById("heading").style.color = "pink";
+    document.getElementById("heading").style.textAlign = "center";
+    document.getElementById("redtext").style.color = "red";
+
+    function displaySrc() {
+			var book1 = document.querySelector("#small2") //1. 이부분 교재 610페이지 작업
+			alert("이미지 소스: "+book1.getAttribute("src"));
+		}	
+
+    function changePic() {
+        var newPic = this.src; //this 자바스크립트 키워드 함수 호출시 this값이 결정됨
+        book.setAttribute("src", newPic) //1. setAttribute('속성', '바꿀 값')으로 속성의 값을 변경할 수 있다.
+
+    }
+
+    
+    
+    		
+
+    
+
+    
+    
+
+    
+  </script>
+</body>
+
+</html>
