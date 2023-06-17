@@ -1,0 +1,80 @@
+header{
+    margin-top: 30px;
+    width: 80vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* border: 1px solid black; */
+    /* background-image: url(./img/패턴배경.jpg); */
+    background-color: #dcff85;
+
+    
+}
+
+
+.bar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 2px;
+    font-size: 15px;
+    
+   
+}
+
+.logo{
+    margin-top: 10px;
+    width: 100%;
+    height: 70%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_img{
+    width: 80%;
+    height: 280%;
+}
+
+
+.navi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 30%;
+
+    /* background-color: #FFF9BA; */
+    /* background-color: #f1f9de; */ /* 원랜 이거였는데 ppt는 색 아예 없애서 일단 그렇게 함.*/
+
+}
+
+.page{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    color: green;
+
+}
+
+.page0{
+    border: none;
+    width: 100%;
+}
+
+
+
+.page0:visited{
+    color: green;
+}

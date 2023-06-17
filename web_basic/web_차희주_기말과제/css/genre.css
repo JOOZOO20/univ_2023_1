@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'TTWanjudaedunsancheB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjudaedunsancheB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    width: 80vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(195, 228, 195);
+
+    margin-top: 2%;
+
+}
+
+
+
+.rnb{
+    font-family: 'TTWanjudaedunsancheB';
+
+
+    display: flex;
+    font-size:60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: #f1f9de;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+
+    gap: 20px;
+}
+
+.container_info{
+    margin: 20px;
+}
+
+.container_span{
+    font-family: 'TTWanjudaedunsancheB';
+    margin: 20px;
+    font-size: 30px;
+}
+
+.container_span1,.container_span2{
+    font-family: 'TTWanjudaedunsancheB';
+    margin: 20px;
+    font-size: 20px;
+}
+
+.container_span1_1,.container_span2_1{
+    font-family: 'SUITE-Regular';
+    margin: 20px;
+    font-size: 15px;
+}
+
+
+.container_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 750px;
+    height: 500px;
+}
